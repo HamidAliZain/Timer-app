@@ -1,13 +1,19 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --main-font: “Roboto”, sans-serif;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body, div, p {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+--button-border: 3px solid #000000;
+  --button-text-size: 2em;
+}
+
+@media screen and (max-width: 1024px) {
+  :root {
+     --button-text-size: 4em;
+  }
 }
